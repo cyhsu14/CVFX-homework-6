@@ -18,7 +18,6 @@ The video is <a href="https://drive.google.com/file/d/1hVUXxp7q34hKQpOnVNforME0A
 
 The video is <a href="https://youtu.be/TwPsq0ncPQc">here</a>. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TwPsq0ncPQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Make these visual effects with any post-production software
 
