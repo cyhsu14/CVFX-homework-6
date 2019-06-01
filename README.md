@@ -63,7 +63,13 @@ P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map
 
 ## Make some special effects based on the pose information, such as rotating, zooming in or out
 
-### Zoom in
+### Object Zoom in
+
+**ORB SLAM**  
+
+<a href="https://drive.google.com/open?id=1dTcJuYksQQKcnvMXdojHJ1AZHg1tHGOO">video</a>  
+可以看到Hello字樣會隨著時間變化而變大，造成zoom in 的效果。但opencv中，putText()指定的起始位置是左下角，整體放大的話會稍微造成視覺上有往右移動的感覺，不是特別自然。
+
 
 
 ## Insert a 3D model to your video
