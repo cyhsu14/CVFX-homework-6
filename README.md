@@ -20,7 +20,7 @@ The video is <a href="https://drive.google.com/file/d/1hVUXxp7q34hKQpOnVNforME0A
 
 The video is <a href="https://youtu.be/TwPsq0ncPQc">here</a>. 
 
-This is <a hred="https://youtu.be/tzAapfS7m94" >color version</a>
+This is <a href="https://youtu.be/tzAapfS7m94">color version</a>
 
 ### 作法
 ORB SLAM中利用相機視角與key points深度建構了一個3D的世界，frame.h中的cv::Mat mRcw、cv::Mat mtcw就是將3D世界坐標系轉2D相機畫面再轉到圖片座標需要的矩陣。
@@ -53,5 +53,8 @@ P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map
 ## Compare above methods
 
 ## Make some special effects based on the pose information, such as rotating, zooming in or out
+
+### Zoom in
+
 
 ## Insert a 3D model to your video
