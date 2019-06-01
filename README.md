@@ -38,7 +38,7 @@ P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map
 |:--:|:--:|
 |<img src="./img/2dpic.png" width="300px">|<img src="./img/3dworld.png" width="300px">|
 
-此外，因為在做處理時，ORB SLAM會將圖轉成灰階，我們希望在顯示時能是彩色，所以在Tracking.cc裡面做了一些調整，保留原本的彩色frame給FrameDrawer畫。
+此外，因為在做處理時，ORB SLAM會將圖轉成灰階，我們希望在顯示時能是彩色，所以在Tracking.cc裡面做了一些調整，保留原本的彩色frame給FrameDrawer畫。
 
 ### 小結
 我們使用的是KITTI dataset設定的.yaml檔，但從相機軌跡上來看，其實他是有一些不準確的，我們實際上的移動情況應該如下圖：  
@@ -46,7 +46,7 @@ P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map
 
 <img src="./img/path.png" width="400px">
 
-所以在結果的影片中，字所在位置其實沒有非常準。如果希望相機軌跡能跟實際更相近、更準確的話，可能要自己做camera calibration，因為比較花時間所以這部分我們並沒有做。
+所以在結果的影片中，字所在位置其實沒有非常準。如果希望相機軌跡能跟實際更相近、更準確的話，可能要自己做camera calibration，因為比較花時間所以這部分我們並沒有做。
 
 ## Make these visual effects with any post-production software
 
