@@ -16,7 +16,7 @@ The video is <a href="https://drive.google.com/file/d/1hVUXxp7q34hKQpOnVNforME0A
 
 ## Make these visual effects with ORB-SLAM2
 
-### Results
+### 結果
 
 The video is <a href="https://youtu.be/TwPsq0ncPQc">here</a>. 
 
@@ -70,7 +70,7 @@ The video is <a href="https://youtu.be/q2puoN5R1ik">here</a>.
 
 **ORB SLAM**  
 
-<a href="https://drive.google.com/open?id=1dTcJuYksQQKcnvMXdojHJ1AZHg1tHGOO">video</a>  
+The video is <a href="https://drive.google.com/open?id=1dTcJuYksQQKcnvMXdojHJ1AZHg1tHGOO">here</a>  
 
 可以看到Hello字樣會隨著時間變化而變大，造成zoom in 的效果。但opencv中，putText()指定的起始位置是左下角，整體放大的話會稍微造成視覺上有往右移動的感覺，不是特別自然。
 
