@@ -93,3 +93,10 @@ The video is <a href="https://youtu.be/DtTlL3QABqY">here</a>.
 The video is <a href="https://drive.google.com/open?id=1oGRWhxHyVX3VQx0WO37U9nAac3Ih3Kbl">here</a>.
 
 我們在影片中加了三角錐的model，作法是在3D世界中指定一個原點，然後對x、y、z軸各移動一個單位，做座標轉換成圖片座標，然後用opencv的fillConvexPoly()畫出三角形。後來有對其中一個頂點做微調，讓畫面中可以有三個面出現。
+
+### AE
+
+我們在影片中加入皮卡丘的3D model，可以看到他會隨著camera位置而轉方向。
+不過最後會自己消失這部分我們一直找不到解決辦法。
+
+The video is <a href="https://youtu.be/d0x4OXuCsE4">here</a>.
