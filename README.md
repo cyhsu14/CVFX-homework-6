@@ -52,6 +52,8 @@ P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map
 
 運用AE的3D track camera effect來追蹤camera位置，並在場景中加上文字。
 
+The video is <a href="https://youtu.be/q2puoN5R1ik">here</a>.
+
 ## Compare above methods
 
 
@@ -76,9 +78,12 @@ P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map
 
 可以看到畫面中Hello文字的左下角保持在場景中固定的位置，讓文字在zoom in的同時也有根據camera的資訊。
 
+The video is <a href="https://youtu.be/z2U8WpZziU4">here</a>.
+
 ### Object Rotate
 
 可以看到畫面中Hello文字的左下角保持在場景中固定的位置，讓文字在rotate的同時也有根據camera的資訊。
 
+The video is <a href="https://youtu.be/DtTlL3QABqY">here</a>.
 
 ## Insert a 3D model to your video
