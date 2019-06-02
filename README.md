@@ -23,11 +23,10 @@ The video is <a href="https://youtu.be/TwPsq0ncPQc">here</a>.
 This is <a href="https://youtu.be/tzAapfS7m94">color version</a>
 
 ### 作法
-ORB SLAM中利用相機視角與key points深度建構了一個3D的世界，frame.h中的cv::Mat mRcw、cv::Mat mtcw就是將3D世界坐標系轉2D相機畫面再轉到圖片座標需要的矩陣。
+ORB SLAM中利用相機視角與key points深度建構了一個3D的世界，frame.h中的cv::Mat mRcw、cv::Mat mtcw就是將3D世界坐標系轉相機畫面再轉到2D圖片座標需要的矩陣。
 
 所以我們做的事就是固定一個3D世界座標，然後用公式轉到圖片座標。作法如下圖。
 <img src="./img/transform.png" width="500px">
-
 
 P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map points的座標中發現這附近數值的點是可以在相機中出現較常時間的。
 
@@ -36,7 +35,7 @@ P是固定的世界座標[-0.1, 0.2, 0.8]，並沒有特殊意義，只是從map
 
 |2D Picture Frame|3D World Frame|
 |:--:|:--:|
-|<img src="./img/2dpic.png" width="300px">|<img src="./img/3dworld.png" width="300px">|
+|<img src="./img/2dpic.png" width="400px">|<img src="./img/3dworld.png" width="400px">|
 
 此外，因為在做處理時，ORB SLAM會將圖轉成灰階，我們希望在顯示時能是彩色，所以在Tracking.cc裡面做了一些調整，保留原本的彩色frame給FrameDrawer畫。
 
@@ -72,18 +71,25 @@ The video is <a href="https://youtu.be/q2puoN5R1ik">here</a>.
 **ORB SLAM**  
 
 <a href="https://drive.google.com/open?id=1dTcJuYksQQKcnvMXdojHJ1AZHg1tHGOO">video</a>  
+
 可以看到Hello字樣會隨著時間變化而變大，造成zoom in 的效果。但opencv中，putText()指定的起始位置是左下角，整體放大的話會稍微造成視覺上有往右移動的感覺，不是特別自然。
 
 **Use AE**  
 
-可以看到畫面中Hello文字的左下角保持在場景中固定的位置，讓文字在zoom in的同時也有根據camera的資訊。
-
 The video is <a href="https://youtu.be/z2U8WpZziU4">here</a>.
+
+可以看到畫面中Hello文字的左下角保持在場景中固定的位置，讓文字在zoom in的同時也有根據camera的資訊。
 
 ### Object Rotate
 
-可以看到畫面中Hello文字的左下角保持在場景中固定的位置，讓文字在rotate的同時也有根據camera的資訊。
-
 The video is <a href="https://youtu.be/DtTlL3QABqY">here</a>.
 
+可以看到畫面中Hello文字的左下角保持在場景中固定的位置，讓文字在rotate的同時也有根據camera的資訊。
+
 ## Insert a 3D model to your video
+
+### ORB SLAM
+
+The video is <a href="https://drive.google.com/open?id=1oGRWhxHyVX3VQx0WO37U9nAac3Ih3Kbl">here</a>.
+
+我們在影片中加了三角錐的model，作法是在3D世界中指定一個原點，然後對x、y、z軸各移動一個單位，做座標轉換成圖片座標，然後用opencv的fillConvexPoly()畫出三角形。後來有對其中一個頂點做微調，讓畫面中可以有三個面出現。
